@@ -1,9 +1,0 @@
-
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^netflixclone\.yongjunjung\.com$ [OR]
-RewriteCond %{HTTP_HOST} ^www\.netflixclone\.yongjunjung\.com$
-RewriteRule ^/?$ "https\:\/\/www\.yongjunjung\.com\/netflixclone" [R=301,L]
-RewriteCond %{HTTP_HOST} ^netflix\.yongjunjung\.com$ [OR]
-RewriteCond %{HTTP_HOST} ^www\.netflix\.yongjunjung\.com$
-RewriteRule ^/?$ "https\:\/\/yongjunjung\.com\/netflix" [R=301,L]
-

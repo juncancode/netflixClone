@@ -1,0 +1,74 @@
+.btn {
+  display: inline-block;
+  background: $primary-color;
+  color: #fff;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  outline: none;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+  border-radius: 2px;
+  &:hover {
+    background: lighten($primary-color, 7%);
+  }
+  &-rounded {
+    border-radius: 3px;
+  }
+  &-xl {
+    font-size: 1.7rem;
+    padding: 1.5rem 2.7rem;
+    text-transform: uppercase;
+  }
+  &-lg {
+    font-size: 1rem;
+    padding: 0.8rem 1.3rem;
+    text-transform: uppercase;
+  }
+  &-icon {
+    margin-left: 1rem;
+  }
+}
+
+/* Container */
+@mixin container {
+  max-width: 70%;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+// Text Styles
+.text-xl {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.text-lg {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-dark {
+  color: #999;
+}
+
+.text-md {
+  font-size: 1.5rem;
+}
+
+// Tab Border
+.tab-border {
+  border-bottom: $primary-color 4px solid;
+}
+
+// Highlight Icon
+.highlight {
+  color: #fff;
+}

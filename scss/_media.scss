@@ -1,0 +1,302 @@
+@media screen and (max-width: 960px) {
+  .showcase {
+    height: 70vh;
+    &-top {
+      img {
+        top: 30%;
+        left: 5%;
+        transform: translate(0);
+      }
+    }
+    &-content {
+      h1 {
+        font-size: 3.7rem;
+        line-height: 1;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .tabs {
+    .container {
+      & > div {
+        .hide-sm {
+          display: none;
+        }
+        .show-sm {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .btn {
+    &-xl {
+      font-size: 1.5rem;
+      padding: 1.4rem 2rem;
+    }
+  }
+
+  .text-xl {
+    font-size: 1.5rem;
+  }
+
+  .text-lg {
+    font-size: 1.3rem;
+  }
+
+  .text-md {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .showcase {
+    background: url("/dist/imgs/bg_medium.jpg");
+    &::after {
+      box-shadow: inset 80px 80px 250px #000000, inset -80px -80px 250px #000000;
+    }
+  }
+
+  .tab-content {
+    .container {
+      #tab-1-content {
+        .tab-1-content-inner {
+          grid-template-columns: 1fr;
+          text-align: center;
+        }
+      }
+      #tab-2-content {
+        .tab-2-content-top {
+          display: block;
+          text-align: center;
+        }
+        .tab-2-content-bottom {
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+    // Table
+    .table {
+      thead {
+        .empty-header {
+          display: none;
+        }
+        th {
+          text-transform: uppercase;
+          padding: 0.8rem;
+        }
+      }
+      tbody {
+        .alt-row {
+          display: table-row !important;
+        }
+        tr {
+          .alt-header {
+            font-size: 0.83rem;
+            color: #999;
+            font-weight: 300;
+            padding: 0.7rem 0;
+          }
+          .header {
+            display: none;
+          }
+          td {
+            color: #999;
+            padding: 0.8rem 1.2rem;
+            text-align: center;
+            &:first-child {
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    max-width: 100%;
+    margin: 1.3rem;
+    color: #999;
+    font-size: 0.9rem;
+    p {
+      margin-bottom: 1.5rem;
+    }
+    .footer-cols {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 2rem;
+      .accordion_section {
+        .accordion {
+          padding: 0.5rem 0;
+          &::after {
+            content: "\002B";
+            color: #999;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+          }
+          &.active::after {
+            content: "\2212";
+          }
+        }
+        ul {
+          border-bottom: 1px solid #999;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          &.show {
+            max-height: 140px;
+          }
+          li {
+            line-height: 1.9;
+            padding-bottom: 0.5rem;
+          }
+          a {
+            color: #999;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .showcase {
+    background: url("/dist/imgs/bg_medium.jpg");
+    &::after {
+      box-shadow: inset 80px 80px 150px rgba(0, 0, 0, 0.5),
+        inset -80px -80px 150px rgba(0, 0, 0, 0.5);
+    }
+    height: 85vh;
+    &-content {
+      h1 {
+        font-size: 3rem;
+        line-height: 1;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+  .btn {
+    &-xl {
+      font-size: 1rem;
+    }
+    &-lg {
+      font-size: 0.8rem;
+    }
+  }
+
+  .text-xl {
+    font-size: 1.5rem;
+  }
+
+  .text-lg {
+    font-size: 1rem;
+  }
+  .tab-content {
+    .container {
+      .table {
+        thead {
+          .empty-header {
+            display: none;
+          }
+          th {
+            font-size: 0.7rem;
+          }
+        }
+        tbody {
+          .alt-row {
+            display: table-row !important;
+          }
+          tr {
+            th {
+              line-height: 20px;
+            }
+            .alt-header {
+              font-size: 0.7rem;
+              color: #999;
+              font-weight: 300;
+              padding: 0.5rem 0.7rem;
+            }
+            td {
+              font-size: 0.7rem;
+              color: #999;
+              padding: 0.5rem 1rem;
+              &:first-child {
+                text-align: left;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// For iPhone 5 //
+@media screen and (max-width: 320px) {
+  .showcase {
+    height: 100vh;
+
+    &-top {
+      img {
+        width: 150px;
+      }
+
+      a {
+        right: -1rem;
+      }
+    }
+    &-content {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+  .tab-content {
+    .container {
+      .table {
+        thead {
+          .empty-header {
+            display: none;
+          }
+          th {
+            font-size: 0.5rem;
+          }
+        }
+        tbody {
+          .alt-row {
+            display: table-row !important;
+          }
+          tr {
+            th {
+              line-height: 1.3;
+            }
+            .alt-header {
+              font-size: 0.7rem;
+              color: #999;
+              font-weight: 300;
+              padding: 0.5rem 0.5rem;
+            }
+            td {
+              font-size: 0.7rem;
+              color: #999;
+              padding: 0.5rem 0.5rem;
+              &:first-child {
+                text-align: left;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
