@@ -54,7 +54,7 @@
 
 @media screen and (max-width: 700px) {
   .showcase {
-    background: url("/dist/imgs/bg_medium.jpg");
+    background: url("../imgs/bg_medium.jpg");
     &::after {
       box-shadow: inset 80px 80px 250px #000000, inset -80px -80px 250px #000000;
     }
@@ -166,7 +166,7 @@
 
 @media screen and (max-width: 500px) {
   .showcase {
-    background: url("/dist/imgs/bg_medium.jpg");
+    background: url("../imgs/bg_medium.jpg");
     &::after {
       box-shadow: inset 80px 80px 150px rgba(0, 0, 0, 0.5),
         inset -80px -80px 150px rgba(0, 0, 0, 0.5);
